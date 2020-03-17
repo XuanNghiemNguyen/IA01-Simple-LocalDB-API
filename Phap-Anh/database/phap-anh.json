@@ -29,8 +29,8 @@
       "english": "laugh"
     },
     {
-      "french": "cry",
-      "english": "red"
+      "french": "encoder",
+      "english": "encode"
     },
     {
       "french": "cri",
@@ -69,10 +69,6 @@
       "english": "try"
     },
     {
-      "french": "try",
-      "english": "red"
-    },
-    {
       "french": "merveilleuse",
       "english": "wonderful"
     },
@@ -87,10 +83,6 @@
     {
       "french": "du froid",
       "english": "cold"
-    },
-    {
-      "french": "Nghiêm",
-      "english": "nhung"
     }
   ]
 }
