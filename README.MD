@@ -1,31 +1,34 @@
-Tên lớp: PTUDWNC-TH2016/3
+Tên lớp:          PTUDWNC-TH2016/3
 
-Tên sinh viên: Nguyễn Xuân Nghiêm
+Tên sinh viên:    Nguyễn Xuân Nghiêm
 
-MSSV: 1612427
+MSSV:             1612427
 
-Bài tập: IA02 - Web dịch Pháp-Việt
 
-  Sinh viên sử dụng 2 api trong IA01
-  👉 api dịch Pháp - Anh
-  👉 api dịch Anh - Việt
+Bài tập:          IA01 - Simple LocalDB API
 
-  để xây dựng ứng dụng Web hỗ trợ dịch Pháp - Việt.
+👉 API cung cấp khả năng dịch Pháp-Anh với dữ liệu từ điển được lưu trữ trong file json:
 
-  👉 Cách chạy phần mềm:
-  Khi ta đang đứng ở thư mục `1612427-IA01`
-    1. Run 2 API:
-      a. Pháp - Anh: `cd ./Phap-Anh`, `npm i`, `npm start`
-      b. Anh - Việt: `cd ./Anh-Viet`, `npm i`, `npm start`
-    2. Run FrontEnd Pháp - Việt:
-      `cd ./Phap-Viet_Front-end`, `npm i`, `npm start`
-    3. Mở trình duyệt với đường dẫn sau: http://localhost:8080/ và sử dụng
+    URL: 
+    
+      Hiển thị danh sách từ điển [GET]: http://127.0.0.1:3000/translate
+      
+      Dịch anh-pháp [GET]: http://127.0.0.1:3000/translate/en-fr?keyword=...
+      
+      Dịch pháp-anh [GET]: http://127.0.0.1:3000/translate/fr-en?keyword=...
+      
+      Thêm từ [POST]: http://127.0.0.1:3000/add-word
+        
 
-  👉 CƠ CHẾ HOẠT ĐỘNG:
-    step 1: Kiểm tra hoạt động của 2 API, nếu có sự cố thì hiện modal báo lỗi (có chi tốn vài giây để thực hiện).
-    step 2: Tìm tất cả các từ có liên quan (1:n) tới keyword được truyền vào với API Pháp - Anh.
-    step 3: 
-      - Dùng tất cả các từ tìm được ở step-2 để tìm chính xác (1:1) với với API Anh- Việt.
-      - Nếu tìm được thì cộng dồn kết quả và xuất ra, nếu không thì hiển thị `chưa rõ` kèm với kết quả Tiếng Anh ở API Pháp - Anh.
+👉 API cung cấp khả năng dịch Anh-Việt với dữ liệu từ điển được lưu trữ trong file json:
 
-* Truy cập link git sau để tham khảo các hình ảnh chính của app.
+    URL: 
+    
+      Hiển thị danh sách từ điển [GET]: http://127.0.0.1:4000/translate
+      
+      Dịch anh-việt [GET]: http://127.0.0.1:4000/translate/en-vie?keyword=...
+      
+      Dịch việt-anh [GET]: http://127.0.0.1:4000/translate/vie-en?keyword=...
+      
+      Thêm từ [POST]: http://127.0.0.1:4000/add-word
+
