@@ -1,19 +1,16 @@
 {
-  "name": "anh-viet-translate-api",
+  "name": "phap-viet_front-end",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app"
+    "start": "http-server ./ -c-1"
   },
   "author": "Nguyen Xuan Nghiem",
   "license": "ISC",
   "dependencies": {
-    "body-parse": "^0.1.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "lowdb": "^1.0.0",
-    "morgan": "^1.9.1"
+    "axios": "^0.19.2",
+    "http-server": "^0.12.1"
   }
 }
